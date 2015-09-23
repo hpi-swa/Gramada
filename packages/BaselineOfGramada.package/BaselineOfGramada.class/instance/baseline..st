@@ -8,7 +8,7 @@ baseline: spec
 				baseline: 'Ohm' with: [
 					spec repository: 'https://github.com/hpi-swa/Ohm-S/packages'];
 				baseline: 'Vivide' with: 
-					[ spec repository: 'https://github.com/hpi-swa/Ohm-S/Vivide' ];
+					[ spec repository: 'https://github.com/hpi-swa/Vivide/repository' ];
 				package: 'Gramada' with: [spec requires: #('libraries')];
 				yourself.
 			spec
