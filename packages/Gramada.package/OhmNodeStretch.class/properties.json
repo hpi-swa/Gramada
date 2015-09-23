@@ -1,0 +1,15 @@
+{
+	"category" : "Gramada-StringVisualizer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ohmNode",
+		"lines" ],
+	"name" : "OhmNodeStretch",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

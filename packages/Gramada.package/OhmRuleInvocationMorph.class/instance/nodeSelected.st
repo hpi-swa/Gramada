@@ -1,0 +1,4 @@
+signals
+nodeSelected
+
+	self emit

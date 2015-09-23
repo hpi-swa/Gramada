@@ -1,0 +1,14 @@
+{
+	"category" : "Gramada-SmalltalkEditor",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"customTextAttributes" ],
+	"name" : "OhmViTextStyler",
+	"pools" : [
+		 ],
+	"super" : "SHTextStylerST80",
+	"type" : "normal" }

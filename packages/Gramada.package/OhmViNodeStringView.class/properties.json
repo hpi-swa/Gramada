@@ -1,0 +1,20 @@
+{
+	"category" : "Gramada-StringVisualizer",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViObjectView classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"viModel",
+		"node",
+		"stringViewer",
+		"filterBlock",
+		"filterEdit" ],
+	"name" : "OhmViNodeStringView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"traitcomposition" : "TViObjectView",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "Gramada-Editors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"builder",
+		"currentRule",
+		"predefinedNamespace" ],
+	"name" : "OhmSHRules",
+	"pools" : [
+		 ],
+	"super" : "OhmSemanticAction",
+	"type" : "normal" }

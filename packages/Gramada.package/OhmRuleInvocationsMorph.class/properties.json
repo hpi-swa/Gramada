@@ -1,0 +1,18 @@
+{
+	"category" : "Gramada-Debugger",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rootNodeMorph",
+		"nodeMorphs",
+		"invocations",
+		"selectedInvocation",
+		"onSelectionCallbacks" ],
+	"name" : "OhmRuleInvocationsMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

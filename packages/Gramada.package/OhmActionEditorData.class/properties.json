@@ -1,0 +1,15 @@
+{
+	"category" : "Gramada-Editors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rule",
+		"action" ],
+	"name" : "OhmActionEditorData",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

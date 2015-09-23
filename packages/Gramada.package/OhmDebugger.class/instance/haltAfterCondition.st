@@ -1,0 +1,4 @@
+accessing
+haltAfterCondition
+
+	^ haltAfterCondition

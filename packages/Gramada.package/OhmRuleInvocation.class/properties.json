@@ -1,0 +1,16 @@
+{
+	"category" : "Gramada-Debugger",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"node",
+		"state",
+		"temporaryChildBindings" ],
+	"name" : "OhmRuleInvocation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

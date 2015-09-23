@@ -1,0 +1,4 @@
+accessing
+ohmRule
+
+	^ ohmRule

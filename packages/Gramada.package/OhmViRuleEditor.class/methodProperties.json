@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"supportedTypes" : "pre 6/1/2015 13:32" },
+	"instance" : {
+		"actionNameOfRule" : "pre 6/1/2015 15:28",
+		"addArtifact" : "pre 6/8/2015 10:33",
+		"artifactName" : "pre 5/4/2015 11:59",
+		"askUserForAttributes" : "pre 6/10/2015 09:43",
+		"browseActions" : "pre 6/1/2015 15:53",
+		"browseCallers" : "pre 6/3/2015 14:15",
+		"callingRules" : "pre 6/3/2015 14:23",
+		"clear" : "pre 5/18/2015 16:50",
+		"deleteRule" : "pre 5/18/2015 16:21",
+		"group" : "pre 6/2/2015 10:20",
+		"initializeArtifact" : "pre 6/9/2015 09:18",
+		"initializeResizeHandle" : "pre 5/6/2015 14:08",
+		"initializeToolbarOperations" : "pre 6/3/2015 13:10",
+		"matchingActions" : "pre 6/1/2015 15:51",
+		"object" : "pre 5/4/2015 10:15",
+		"object:" : "pre 6/3/2015 08:38",
+		"ohmRule" : "pre 5/18/2015 16:48",
+		"ruleSourceChangeFinished" : "pre 5/18/2015 14:23",
+		"tryToAddAction" : "pre 6/10/2015 09:42",
+		"tryToDeleteRule" : "pre 6/3/2015 14:17",
+		"updateSourceFromChangeEvent:" : "pre 5/18/2015 14:37" } }

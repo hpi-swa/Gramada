@@ -1,0 +1,17 @@
+{
+	"category" : "Gramada-StringVisualizer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ohmNode",
+		"colorMap",
+		"stretches",
+		"filterBlock" ],
+	"name" : "OhmNodeStringMorph",
+	"pools" : [
+		 ],
+	"super" : "RectangleMorph",
+	"type" : "normal" }

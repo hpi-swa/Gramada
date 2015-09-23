@@ -1,0 +1,22 @@
+{
+	"category" : "Gramada-Debugger",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"codeUnderDebug",
+		"debugProcess",
+		"debugMutex",
+		"controlMutex",
+		"haltCondition",
+		"haltAfterCondition",
+		"ruleInvocationStack",
+		"haltPosition",
+		"currentInvocation" ],
+	"name" : "OhmDebugger",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"stretchHeight" : "pre 6/8/2015 11:08" },
+	"instance" : {
+		"handlesMouseOver:" : "pre 5/8/2015 09:58",
+		"highlightOff" : "pre 5/8/2015 14:28",
+		"highlightOn" : "pre 5/8/2015 14:28",
+		"hint" : "pre 5/8/2015 10:00",
+		"hint:" : "pre 5/8/2015 10:00",
+		"initialize" : "pre 5/15/2015 10:49",
+		"localEnd" : "pre 5/8/2015 13:59",
+		"localEnd:" : "pre 5/8/2015 13:59",
+		"localStart" : "pre 5/8/2015 13:59",
+		"localStart:" : "pre 5/8/2015 13:59",
+		"mouseEnter:" : "pre 5/18/2015 13:51",
+		"mouseLeave:" : "pre 5/8/2015 14:07",
+		"ohmNode" : "pre 5/8/2015 09:34",
+		"ohmNode:" : "pre 5/8/2015 09:34",
+		"stretch" : "pre 5/8/2015 14:03",
+		"stretch:" : "pre 5/8/2015 14:03",
+		"stretchLength" : "pre 5/8/2015 09:38",
+		"textMorph" : "pre 5/8/2015 13:59",
+		"textMorph:" : "pre 5/8/2015 13:59" } }

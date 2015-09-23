@@ -1,0 +1,4 @@
+accessing
+callbacksForSelectedInvocation: invocationsToCallbacks
+
+	self onSelectionCallbacks: invocationsToCallbacks

@@ -1,0 +1,19 @@
+{
+	"category" : "Gramada-StringVisualizer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ohmNode",
+		"hint",
+		"textMorph",
+		"localStart",
+		"localEnd",
+		"stretch" ],
+	"name" : "OhmStretchLineMorph",
+	"pools" : [
+		 ],
+	"super" : "RectangleMorph",
+	"type" : "normal" }

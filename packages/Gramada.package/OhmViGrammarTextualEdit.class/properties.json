@@ -1,0 +1,14 @@
+{
+	"category" : "Gramada-Editors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ohmGrammar" ],
+	"name" : "OhmViGrammarTextualEdit",
+	"pools" : [
+		 ],
+	"super" : "ViSourceCodeEdit",
+	"type" : "normal" }

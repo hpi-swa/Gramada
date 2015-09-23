@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"horizontalSpacing" : "pre 5/26/2015 11:10",
+		"size" : "pre 5/2/2015 15:17",
+		"size:" : "pre 4/24/2015 17:36",
+		"spacing" : "pre 5/21/2015 08:41" },
+	"instance" : {
+		"addChild:" : "pre 4/24/2015 17:36",
+		"alignEdgeFromParent:" : "pre 5/26/2015 13:05",
+		"alignSubmorphs" : "pre 5/26/2015 12:57",
+		"children" : "pre 4/24/2015 17:36",
+		"children:" : "pre 4/24/2015 17:36",
+		"handlesMouseDown:" : "pre 4/24/2015 17:36",
+		"highlight" : "pre 4/24/2015 17:36",
+		"initialize" : "pre 5/26/2015 13:29",
+		"layoutUnder:" : "pre 5/26/2015 12:57",
+		"layoutWidth" : "pre 4/24/2015 17:36",
+		"layoutWidth:" : "pre 4/24/2015 17:36",
+		"lineToParent" : "pre 4/24/2015 17:36",
+		"lineToParent:" : "pre 4/24/2015 17:36",
+		"mouseDown:" : "pre 5/26/2015 14:10",
+		"mouseUp:" : "pre 5/26/2015 14:11",
+		"node" : "pre 4/24/2015 17:36",
+		"node:" : "pre 4/24/2015 17:36",
+		"nodeSelected" : "pre 5/26/2015 13:51",
+		"visualization" : "pre 4/24/2015 17:36",
+		"visualization:" : "pre 4/24/2015 17:36" } }

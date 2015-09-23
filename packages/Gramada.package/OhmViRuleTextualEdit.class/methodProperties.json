@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"callingRules" : "pre 6/10/2015 16:46",
+		"clear" : "pre 6/9/2015 15:23",
+		"compile" : "pre 6/9/2015 15:00",
+		"evaluate" : "pre 5/6/2015 14:22",
+		"implementorsOfIt" : "pre 6/10/2015 16:53",
+		"ohmRule" : "pre 5/6/2015 14:24",
+		"ohmRule:" : "pre 5/18/2015 16:51",
+		"openIt" : "pre 6/10/2015 17:00",
+		"parse" : "pre 5/6/2015 14:22",
+		"sendersOfIt" : "pre 6/10/2015 16:35",
+		"textMorphClass" : "pre 6/10/2015 16:23" } }

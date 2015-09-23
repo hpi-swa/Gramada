@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"supportedTypes" : "pre 6/9/2015 15:46" },
+	"instance" : {
+		"clear" : "pre 6/9/2015 15:59",
+		"grammarDefinitionChangeFinished" : "pre 6/9/2015 15:54",
+		"group" : "pre 6/9/2015 15:58",
+		"initializeArtifact" : "pre 6/9/2015 15:53",
+		"initializeResizeHandle" : "pre 6/9/2015 15:55",
+		"object" : "pre 6/9/2015 16:07",
+		"object:" : "pre 6/9/2015 16:07",
+		"updateSourceFromChangeEvent:" : "pre 9/22/2015 16:00" } }

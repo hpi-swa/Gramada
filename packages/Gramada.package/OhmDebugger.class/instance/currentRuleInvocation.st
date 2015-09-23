@@ -1,0 +1,4 @@
+accessing
+currentRuleInvocation
+
+	^ self currentInvocation

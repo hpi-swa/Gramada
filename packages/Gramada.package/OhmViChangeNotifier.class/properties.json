@@ -1,0 +1,16 @@
+{
+	"category" : "Gramada-Notifications",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViObjectNotifier classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"filter" ],
+	"name" : "OhmViChangeNotifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TViObjectNotifier",
+	"type" : "normal" }

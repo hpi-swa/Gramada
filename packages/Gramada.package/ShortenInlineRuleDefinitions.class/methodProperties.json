@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"AltRec:withTerm:withPrimitive:withAlt:" : "pre 6/3/2015 08:56",
+		"Seq:withManyIters:" : "pre 6/3/2015 09:05",
+		"TermInline:withSeq:withCaseName:" : "pre 6/3/2015 08:57",
+		"caseName:withPrimitive:withManySequences:withName:withManySequences:withAlt:" : "pre 6/3/2015 08:58",
+		"defaultExpression:" : "pre 6/3/2015 09:06" } }

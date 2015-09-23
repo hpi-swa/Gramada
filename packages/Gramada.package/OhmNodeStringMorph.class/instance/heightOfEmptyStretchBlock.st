@@ -1,0 +1,4 @@
+constants
+heightOfEmptyStretchBlock 
+
+	^ 5

@@ -1,0 +1,4 @@
+layout
+reset
+
+	self removeAllMorphs

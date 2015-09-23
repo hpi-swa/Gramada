@@ -1,0 +1,18 @@
+{
+	"category" : "Gramada-Debugger",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Size" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"node",
+		"layoutWidth",
+		"lineToParent",
+		"children",
+		"visualization" ],
+	"name" : "OhmRuleInvocationMorph",
+	"pools" : [
+		 ],
+	"super" : "TextMorph",
+	"type" : "normal" }

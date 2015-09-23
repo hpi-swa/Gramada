@@ -1,0 +1,4 @@
+notification-registering
+unsubscribe
+
+	OhmChangeNotifier uniqueInstance noMoreNotificationsFor: self.

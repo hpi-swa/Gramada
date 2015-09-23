@@ -1,0 +1,4 @@
+accessing
+browsePotentialChildren
+
+	#artifacts openScriptWith: self potentialChildActions

@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"newOnNamespace:" : "pre 5/4/2015 10:35" },
+	"instance" : {
+		"RuleDefine:identifier:optionalDescription:operator:body:" : "pre 8/5/2015 14:18",
+		"RuleOverride:identifier:optionalDescription:operator:body:" : "pre 8/5/2015 14:19",
+		"caseName:caseKeyword:with:actualName:with:with:" : "pre 8/5/2015 14:19",
+		"defaultExpression:" : "pre 5/4/2015 11:38",
+		"listExpression:" : "pre 5/18/2015 13:00",
+		"name:firstPart:rest:" : "pre 8/5/2015 14:19",
+		"rangeFrom:type:" : "pre 8/5/2015 14:17",
+		"ruleDescr:commentKeyword:commentText:lineEnding:" : "pre 8/5/2015 14:20",
+		"terminalExpression:" : "pre 5/4/2015 11:36" } }
