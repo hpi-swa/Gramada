@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfGramada",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfGramada",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
