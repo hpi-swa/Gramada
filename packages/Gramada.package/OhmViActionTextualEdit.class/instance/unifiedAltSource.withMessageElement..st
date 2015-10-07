@@ -4,5 +4,5 @@ unifiedAltSource: rule withMessageElement: argumentName
 	| newSource |
 	
 	newSource := (rule boundGrammar synthesizedAttribute: ShortenInlineRuleDefinitions new)
-		value: (OhmGrammarOfOhm matchContents: rule body textualRepresentation startingFrom: #Alt).
+		value: (OhmGrammarOfOhm match: rule body textualRepresentation startingFrom: #Alt).
 	^ '(' , newSource withBlanksTrimmed , '):' , argumentName

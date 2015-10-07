@@ -7,7 +7,7 @@ unifiedSource
 	string := lines first.
 	
 	cst := OhmSmalltalk 
-			matchContents: string 
+			match: string 
 			startingFrom: #KeywordMethodHeader.
 	cst = false ifTrue: [^ self method getSource ].
 	argumentNames := (OhmSmalltalk synthesizedAttribute: (OhmArgumentsOfKeywordMessageHeader new)) value: cst.

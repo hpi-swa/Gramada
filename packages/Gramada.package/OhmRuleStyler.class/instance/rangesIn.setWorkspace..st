@@ -5,7 +5,7 @@ rangesIn: aText setWorkspace: aBoolean
 
 	| cst rangeSetting |
 
-	cst := OhmGrammarOfOhm matchContents: aText asString , Character cr startingFrom: #Rule.
-	cst = false ifTrue: [ ^ {} ].
+	cst := OhmGrammarOfOhm match: aText asString , Character cr startingFrom: #Rule.
+	cst failed ifTrue: [ ^ {} ].
 	rangeSetting := OhmGrammarOfOhm synthesizedAttribute: OhmSHRules new.
 	^ rangeSetting value: cst

@@ -5,8 +5,8 @@ rangesIn: aText setWorkspace: aBoolean
 
 	| cst rangeSetting |
 	
-	cst := OhmSmalltalk matchContents: aText asString startingFrom: #MethodDeclaration.
-	cst = false ifTrue: [ ^ {} ].
+	cst := OhmSmalltalk match: aText asString startingFrom: #MethodDeclaration.
+	cst failed ifTrue: [ ^ {} ].
 	rangeSetting := OhmSmalltalk synthesizedAttribute: OhmSHSmalltalkMethods new.
 	self halt.
 	^ rangeSetting value: cst

@@ -5,7 +5,7 @@ rangesIn: aText setWorkspace: aBoolean
 
 	| cst rangeSetting ohmStyling stCode |
 	cst := OhmUnifiedAction 
-			matchContents: aText asString lines first 
+			match: aText asString lines first 
 			startingFrom: #Alt.
 	cst = false ifTrue: [ ^ {} ].
 	rangeSetting := OhmUnifiedAction synthesizedAttribute: OhmSHActions new.
@@ -13,7 +13,7 @@ rangesIn: aText setWorkspace: aBoolean
 
 	stCode := aText asString withBlanksTrimmed lines.
 	stCode := ({((stCode first asOrderedCollection collect: [:x | ' ']) joinSeparatedBy: '')} , (stCode copyFrom: 2 to: stCode size)) joinSeparatedBy: '',Character cr.
-	cst := OhmSmalltalk matchContents: stCode startingFrom: #ExecutableCode.
+	cst := OhmSmalltalk match: stCode startingFrom: #ExecutableCode.
 	cst = false ifTrue: [ ^ ohmStyling ].
 	rangeSetting := OhmSmalltalk synthesizedAttribute: OhmSHSmalltalkMethods new.
 
