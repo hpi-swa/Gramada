@@ -3,11 +3,12 @@
 		 },
 	"instance" : {
 		"initialize" : "pre 5/26/2015 14:53",
-		"initializeInvocationsViewer" : "pre 6/10/2015 15:04",
+		"initializeInvocationsViewer" : "pre 11/2/2015 14:59",
 		"model" : "pre 4/30/2015 17:17",
 		"model:" : "pre 4/30/2015 17:17",
 		"nodesForObjects:" : "pre 5/26/2015 19:46",
 		"onViewSelectionChanged:" : "pre 6/9/2015 13:57",
+		"process:" : "pre 11/2/2015 14:56",
 		"reset" : "pre 6/10/2015 15:03",
 		"ruleInvocationsViewer" : "pre 5/13/2015 13:16",
 		"ruleInvocationsViewer:" : "pre 5/13/2015 13:16",

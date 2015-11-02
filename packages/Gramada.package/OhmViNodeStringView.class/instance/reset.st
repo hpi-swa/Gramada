@@ -13,7 +13,8 @@ reset
 
 	self node: self model objects first.
 	(self model nodes first includesKey: #filter)
-		ifTrue: [self filterBlock: (self model nodes first at: #filter)].
+		ifTrue: [self filterBlock: (self model nodes first at: #filter)]
+		ifFalse: [self filterBlock: [:n | true]].
 
 	self addMorph: self resetFilterEdit.
 	self filterEdit height: 100.

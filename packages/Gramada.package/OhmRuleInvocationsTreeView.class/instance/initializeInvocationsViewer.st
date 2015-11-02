@@ -19,6 +19,6 @@ initializeInvocationsViewer
 	self 
 		connect: self ruleInvocationsViewer
 		signal: #selectionChanged:
-		toSelector: #onViewSelectionChanged:.
-	self model objects ifNotEmpty: [ 
-		self onViewSelectionChanged: {self model objects last} ].
+		toSelector: #yield:.
+	self model nodes ifNotEmpty: [ 
+		self yield: {self model nodes last} ].
