@@ -1,0 +1,14 @@
+{
+	"category" : "Gramada-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GramadaScripts",
+	"pools" : [
+		 ],
+	"super" : "ViScriptArchive",
+	"type" : "normal" }
