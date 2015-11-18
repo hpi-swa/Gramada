@@ -1,4 +1,4 @@
 as yet unclassified
 AllGramadaScripts
 
-	^ #(GramadaDebuggerPane GramadaGrammarLiveEditor GramadaGrammarsBrowser GramadaParseResultVisualizer)
+	^ #(GramadaDebuggerPane GramadaGrammarLiveEditor GramadaGrammarsBrowser GramadaParseResultVisualizer GramadaGrammarRuleBrowser)
