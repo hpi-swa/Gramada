@@ -6,7 +6,7 @@ baseline: spec
 		do: [
 			spec
 				baseline: 'Ohm' with: [
-					spec repository: 'github://hpi-swa/Ohm-S/packages'];
+					spec repository: 'github://hpi-swa/ohm-s:update-to-v0.86/packages'];
 				baseline: 'Vivide' with: 
 					[ spec repository: 'github://hpi-swa/vivide/repository' ];
 				package: 'Gramada' with: [spec requires: #('libraries')];
