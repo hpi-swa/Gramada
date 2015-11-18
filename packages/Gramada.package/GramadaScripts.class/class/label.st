@@ -1,3 +1,3 @@
 profile
 label
-	^ 'default'
+	^ 'Gramada'
