@@ -1,4 +1,5 @@
 # Gramada
+Gramada is a live programming environment for developing programming languages. There is an online [demo video](https://vimeo.com/180190846) giving an overview of the Gramada tool set.
 
 ## Installation
 As Gramada is currently not public yet, the installation process is a little bit involved.
