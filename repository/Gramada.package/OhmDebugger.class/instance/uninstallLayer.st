@@ -7,4 +7,9 @@ uninstallLayer
 	layeredMethod := (klass >> #eval:).
 	layeredMethod isContextSMethod 
 		ifTrue: [	layeredMethod removePartialMethod: 
-					(layeredMethod partialMethodFor: #ohmDebugging)]]
+					(layeredMethod partialMethodFor: #ohmDebugging)]].
+			
+	(OhmGrammar >> #skipSpaces:) isContextSMethod 
+		ifTrue: [layeredMethod := OhmGrammar>>#skipSpaces:.
+				layeredMethod removePartialMethod: 
+					(layeredMethod partialMethodFor: #ohmDebugging)]
