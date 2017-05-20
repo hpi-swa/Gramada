@@ -49,14 +49,14 @@ if [ $SMALLTALK == "Squeak4.6" ]; then
     print_info "Downloading Squeak4.6 sources..."
     wget http://ftp.squeak.org/sources_files/SqueakV46.sources.gz
     gunzip SqueakV46.sources.gz
-elif [ $SMALLTALK == "Squeak5.0" ]; then
-    print_info "Downloading Squeak5.0 sources..."
+elif [ $SMALLTALK == "Squeak5.1" ]; then
+    print_info "Downloading Squeak5.1 sources..."
     wget http://ftp.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
 else
     print_info "Downloading SqueakTrunk sources..."
-    wget http://ftp.squeak.org/sources_files/SqueakV41.sources.gz
-    gunzip SqueakV41.sources.gz
+    wget http://ftp.squeak.org/sources_files/SqueakV60.sources.gz
+    gunzip SqueakV60.sources.gz
 fi
 
 print_info "Preparing Gramada image from $SMALLTALK Vivide image..."
