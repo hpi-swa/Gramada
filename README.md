@@ -30,10 +30,10 @@ To update Gramada first pull the latest version of the git repository. Then exec
   repository: 'github://hpi-swa/vivide/repository') .
 (Metacello new
   baseline: 'Ohm';
-  repository: 'github://hpi-swa/ohm-s:update-to-v0.86/packages') .
+  repository: 'github://hpi-swa/ohm-s/packages') .
 (Smalltalk at: #Metacello) new
   baseline: 'Gramada';
-  repository: 'filetree://C:\Users\C5187727\Desktop\SOhmVivide\Gramada\packages'
+  repository: 'filetree://<Path to Gramada filetree repository>\Gramada\repository'
 }
 do: [:b | b get];
 do: [:b | b load].
