@@ -6,5 +6,8 @@ SmalltalkCISpec {
 			#load : [ 'default' ],
 			#platforms : [ #squeak ]
 		}
-	]
+	],
+	#testing: {
+		#failOnZeroTests: false
+	}
 }

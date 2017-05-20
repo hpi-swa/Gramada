@@ -32,7 +32,7 @@ author initials which might fail these tests. So we set some dummy initials here
 "Load Vivide into image"
 Metacello new
   baseline: 'Gramada';
-  repository: 'github://hpi-swa/Gramada/packages';
+  repository: 'github://hpi-swa/Gramada/repository';
   load.
 
 "Start Vivide delayed"
@@ -51,6 +51,8 @@ WorldState addDeferredUIMessage: [
   VivideLight useVivideDebugger: false.
   VivideLight prepareSqueak.
   VivideLight open.
+
+  GramadaScripts installScriptsAndOpenProfile.
   
   "Save image and quit"
   SmalltalkImage current snapshot: true andQuit: true].
