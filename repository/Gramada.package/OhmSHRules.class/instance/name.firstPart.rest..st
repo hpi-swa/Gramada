@@ -1,4 +1,4 @@
 actions
 name: aNode firstPart: firstPart rest: restPart
 
-	^ { self rangeFrom: aNode type: #ruleReferenceName }
+	^ { self rangeFrom: aNode type: #ohmRuleReferenceName }
