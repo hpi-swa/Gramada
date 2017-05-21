@@ -51,8 +51,8 @@ fi
 mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 
 print_info "Downloading Vivide image"
-wget "${VIVIDE_SOURCE_URL}\\${VIVIDE_IMAGE}"
-wget "${VIVIDE_SOURCE_URL}\\${VIVIDE_CHANGES}"
+wget "${VIVIDE_SOURCE_URL}${VIVIDE_IMAGE}"
+wget "${VIVIDE_SOURCE_URL}${VIVIDE_CHANGES}"
 mv *.image "$GRAMADA_IMAGE"
 mv *.changes "$GRAMADA_CHANGES"
 
