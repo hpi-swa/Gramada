@@ -1,4 +1,4 @@
-as yet unclassified
+installation
 AllGramadaScripts
 
-	^ #(GramadaDebuggerPane GramadaGrammarLiveEditor GramadaGrammarsBrowser GramadaParseResultVisualizer GramadaGrammarRuleBrowser)
+	^ #(GramadaDebuggerPane GramadaGrammarLiveEditor GramadaGrammarsBrowser GramadaParseResultVisualizer GramadaGrammarRuleBrowser GramadaSyntaxTestBrowser)

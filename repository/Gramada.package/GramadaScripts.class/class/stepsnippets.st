@@ -2,4 +2,19 @@ steps
 stepsnippets
 	<step>
 
-	^ ((Dictionary new) add: (#definition->#'46e862b1-69aa-e348-ac02-6f21384543b3'); add: (#class->ViScriptPart); add: (#properties->((Dictionary new) add: (#inputKind->Object); add: (#creationTimeStamp->'8 June 2015 5:17:29 pm'); add: (#view->ViTreeViewExtended); add: (#creationAuthor->'mt'); add: (#outputKind->ViQueryStepDefinition); add: (#isNew->false); yourself)); add: (#isProperty->false); add: (#next->#'5e29ea34-ab1f-4c40-9122-36f7572fc535'); add: (#label->nil); add: (#iconCode->'nil'); add: (#id->#snippets); add: (#isReference->false); yourself)
+	^ (Dictionary newFrom: {
+(#class -> ViScriptPart).
+(#definition -> #'46e862b1-69aa-e348-ac02-6f21384543b3').
+(#iconCode -> 'nil').
+(#id -> #snippets).
+(#isProperty -> false).
+(#isReference -> false).
+(#label -> nil).
+(#next -> #'5e29ea34-ab1f-4c40-9122-36f7572fc535').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '8 June 2015 5:17:29 pm').
+(#inputKind -> Object).
+(#isNew -> false).
+(#outputKind -> ViQueryStepDefinition).
+(#view -> ViTreeViewExtended)}))})

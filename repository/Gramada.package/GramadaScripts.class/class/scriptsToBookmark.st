@@ -1,4 +1,4 @@
-as yet unclassified
+installation
 scriptsToBookmark
 
 	^ self AllGramadaScripts copyWithoutAll: #(GramadaGrammarRuleBrowser)

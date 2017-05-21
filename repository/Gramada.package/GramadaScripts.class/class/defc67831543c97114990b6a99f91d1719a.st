@@ -2,7 +2,8 @@ definitions
 defc67831543c97114990b6a99f91d1719a
 	<definition>
 
-	^ ((Dictionary new) add: (#class->ViQueryStepDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'pre'); add: (#creationTimeStamp->'27 May 2015 6:05:45 pm'); yourself)); add: (#id->#'c6783154-3c97-1149-90b6-a99f91d1719a'); add: (#block->[:in :out | [| d content rule grammar |
+	^ (Dictionary newFrom: {
+(#block -> [:in :out | [| d content rule grammar |
 			content := 'ruleNamed: ruleName ifAbsent: aBlock
 
 	^ (self ruleDeclarations at: ruleName ifAbsent: aBlock)
@@ -12,24 +13,25 @@ defc67831543c97114990b6a99f91d1719a
 			in ifNotEmpty: [
 				| nodeOrFailure |
 				nodeOrFailure := in first.
-				(nodeOrFailure isKindOf: OhmNode)
-					ifTrue: [content := nodeOrFailure interval stream asString.
-							rule := nodeOrFailure ruleName asSymbol.
-							grammar := nodeOrFailure grammar].
-				(nodeOrFailure isKindOf: OhmMatchFailure)
-					ifTrue: [content := nodeOrFailure state inputStream asString.
-							rule := nodeOrFailure startRuleName.
-							grammar := nodeOrFailure state grammar].
-				]. 
-			d := OhmDebugger
-					debug: [grammar
-					match: content
-					startingFrom: rule]. 
+				(nodeOrFailure succeeded)
+					ifTrue: [content := nodeOrFailure cst interval stream asString.
+							rule := nodeOrFailure cst ruleName asSymbol.
+							grammar := nodeOrFailure cst grammar]
+					ifFalse: [content := nodeOrFailure failure state inputStream asString.
+							rule := nodeOrFailure failure startRuleName.
+							grammar := nodeOrFailure failure state grammar]]. 
+			d := OhmDebugger debug: [grammar match: content startingFrom: rule]. 
 			d] 
 			value in: [:result |
 	(ViQueryInterpreter isCollection: result)
 		ifTrue: [out addAll: result]
-		ifFalse: [out add: result]]]); add: (#sourceCode->'[:in :out | [| d content rule grammar |
+		ifFalse: [out add: result]]]).
+(#class -> ViQueryStepDefinition).
+(#id -> #'c6783154-3c97-1149-90b6-a99f91d1719a').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'pre').
+(#creationTimeStamp -> '27 May 2015 6:05:45 pm')})).
+(#sourceCode -> '[:in :out | [| d content rule grammar |
 			content := ''ruleNamed: ruleName ifAbsent: aBlock
 
 	^ (self ruleDeclarations at: ruleName ifAbsent: aBlock)
@@ -39,21 +41,16 @@ defc67831543c97114990b6a99f91d1719a
 			in ifNotEmpty: [
 				| nodeOrFailure |
 				nodeOrFailure := in first.
-				(nodeOrFailure isKindOf: OhmNode)
-					ifTrue: [content := nodeOrFailure interval stream asString.
-							rule := nodeOrFailure ruleName asSymbol.
-							grammar := nodeOrFailure grammar].
-				(nodeOrFailure isKindOf: OhmMatchFailure)
-					ifTrue: [content := nodeOrFailure state inputStream asString.
-							rule := nodeOrFailure startRuleName.
-							grammar := nodeOrFailure state grammar].
-				]. 
-			d := OhmDebugger
-					debug: [grammar
-					match: content
-					startingFrom: rule]. 
+				(nodeOrFailure succeeded)
+					ifTrue: [content := nodeOrFailure cst interval stream asString.
+							rule := nodeOrFailure cst ruleName asSymbol.
+							grammar := nodeOrFailure cst grammar]
+					ifFalse: [content := nodeOrFailure failure state inputStream asString.
+							rule := nodeOrFailure failure startRuleName.
+							grammar := nodeOrFailure failure state grammar]]. 
+			d := OhmDebugger debug: [grammar match: content startingFrom: rule]. 
 			d] 
 			value in: [:result |
 	(ViQueryInterpreter isCollection: result)
 		ifTrue: [out addAll: result]
-		ifFalse: [out add: result]]]'); yourself)
+		ifFalse: [out add: result]]]')})
