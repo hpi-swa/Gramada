@@ -48,7 +48,7 @@ if [[ "$(uname -s)" == "Linux" ]]; then
 fi
 # ==============================================================================
 
-mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}
+mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 
 print_info "Downloading Vivide image"
 wget "${VIVIDE_SOURCE_URL}\\${VIVIDE_IMAGE}"
