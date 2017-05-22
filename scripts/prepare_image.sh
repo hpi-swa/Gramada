@@ -53,8 +53,8 @@ mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 print_info "Downloading Vivide image"
 wget "${VIVIDE_SOURCE_URL}${VIVIDE_IMAGE}"
 wget "${VIVIDE_SOURCE_URL}${VIVIDE_CHANGES}"
-mv *.image "${GRAMADA_IMAGE}"
-mv *.changes "${GRAMADA_CHANGES}"
+mv "${VIVIDE_IMAGE}" "${GRAMADA_IMAGE}"
+mv "${VIVIDE_CHANGES}" "${GRAMADA_CHANGES}"
 
 if [[ $TRAVIS_SMALLTALK_VERSION == "Squeak4.6" ]]; then
     print_info "Downloading Squeak4.6 sources..."
@@ -72,12 +72,12 @@ fi
 
 print_info "Preparing Gramada image from ${TRAVIS_SMALLTALK_VERSION} Vivide image..."
 EXIT_STATUS=0
-"$COG_VM_PATH" $COG_VM_PARAM "$GRAMADA_IMAGE" "$PROJECT_HOME/scripts/prepare_image.st" || EXIT_STATUS=$?
+"${COG_VM_PATH}" $COG_VM_PARAM "${GRAMADA_IMAGE}" "${PROJECT_HOME}/scripts/prepare_image.st" || EXIT_STATUS=$?
 
 if [ $EXIT_STATUS -eq 0 ]; then
-    print_info "Uploading $GRAMADA_IMAGE and $GRAMADA_CHANGES..."
-    curl -s -u "$DEPLOY_CREDENTIALS" -T "$GRAMADA_IMAGE" "$DEPLOY_TARGET" && print_info "$GRAMADA_IMAGE uploaded."
-    curl -s -u "$DEPLOY_CREDENTIALS" -T "$GRAMADA_CHANGES" "$DEPLOY_TARGET" && print_info "$GRAMADA_CHANGES uploaded."
+    print_info "Uploading ${GRAMADA_IMAGE} and ${GRAMADA_CHANGES}..."
+    curl -s -u "${DEPLOY_CREDENTIALS}" -T "${GRAMADA_IMAGE}" "${DEPLOY_TARGET}" && print_info "$GRAMADA_IMAGE uploaded."
+    curl -s -u "${DEPLOY_CREDENTIALS}" -T "${GRAMADA_CHANGES}" "${DEPLOY_TARGET}" && print_info "$GRAMADA_CHANGES uploaded."
     print_info "Done!"
 else
     print_info "Preparation of Gramada image failed."
