@@ -53,8 +53,8 @@ mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 print_info "Downloading Vivide image"
 wget "${VIVIDE_SOURCE_URL}${VIVIDE_IMAGE}"
 wget "${VIVIDE_SOURCE_URL}${VIVIDE_CHANGES}"
-mv *.image "$GRAMADA_IMAGE"
-mv *.changes "$GRAMADA_CHANGES"
+mv *.image "${GRAMADA_IMAGE}"
+mv *.changes "${GRAMADA_CHANGES}"
 
 if [[ $TRAVIS_SMALLTALK_VERSION == "Squeak4.6" ]]; then
     print_info "Downloading Squeak4.6 sources..."
@@ -70,7 +70,7 @@ else
     gunzip SqueakV60.sources.gz
 fi
 
-print_info "Preparing Gramada image from {$TRAVIS_SMALLTALK_VERSION} Vivide image..."
+print_info "Preparing Gramada image from ${TRAVIS_SMALLTALK_VERSION} Vivide image..."
 EXIT_STATUS=0
 "$COG_VM_PATH" $COG_VM_PARAM "$GRAMADA_IMAGE" "$PROJECT_HOME/scripts/prepare_image.st" || EXIT_STATUS=$?
 
