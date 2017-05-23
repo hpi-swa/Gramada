@@ -72,7 +72,7 @@ fi
 
 print_info "Preparing Gramada image from ${TRAVIS_SMALLTALK_VERSION} Vivide image..."
 EXIT_STATUS=0
-"${COG_VM_PATH}" $COG_VM_PARAM "${GRAMADA_IMAGE}" "${PROJECT_HOME}/scripts/prepare_image.st" || EXIT_STATUS=$?
+"${SMALLTALK_CI_VM}" $COG_VM_PARAM "${GRAMADA_IMAGE}" "${TRAVIS_BUILD_DIR}/scripts/prepare_image.st" || EXIT_STATUS=$?
 
 if [ $EXIT_STATUS -eq 0 ]; then
     print_info "Uploading ${GRAMADA_IMAGE} and ${GRAMADA_CHANGES}..."
