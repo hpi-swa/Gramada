@@ -66,8 +66,8 @@ elif [[ $TRAVIS_SMALLTALK_VERSION == "Squeak5.1" ]]; then
     gunzip SqueakV50.sources.gz
 else
     print_info "Downloading SqueakTrunk sources..."
-    wget http://ftp.squeak.org/sources_files/SqueakV60.sources.gz
-    gunzip SqueakV60.sources.gz
+    wget http://ftp.squeak.org/sources_files/SqueakV50.sources.gz
+    gunzip SqueakV50.sources.gz
 fi
 
 print_info "Preparing Gramada image from ${TRAVIS_SMALLTALK_VERSION} Vivide image..."
