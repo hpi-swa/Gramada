@@ -37,7 +37,7 @@ VIVIDE_CHANGES="Vivide-${TRAVIS_SMALLTALK_VERSION}.changes"
 VIVIDE_SOURCE_URL="https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/"
 
 GRAMADA_IMAGE="Gramada-${TRAVIS_SMALLTALK_VERSION}.image"
-GRAMADA_Changes="Gramada-${TRAVIS_SMALLTALK_VERSION}.changes"
+GRAMADA_CHANGES="Gramada-${TRAVIS_SMALLTALK_VERSION}.changes"
 
 DEPLOY_PATH="${SMALLTALK_CI_HOME}/deploy"
 DEPLOY_TARGET="https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/gramada/"
