@@ -32,10 +32,6 @@ fi
 
 # Set paths and files
 # ==============================================================================
-VIVIDE_IMAGE="Vivide-${TRAVIS_SMALLTALK_VERSION}.image"
-VIVIDE_CHANGES="Vivide-${TRAVIS_SMALLTALK_VERSION}.changes"
-VIVIDE_SOURCE_URL="https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/"
-
 GRAMADA_IMAGE="Gramada-${TRAVIS_SMALLTALK_VERSION}.image"
 GRAMADA_CHANGES="Gramada-${TRAVIS_SMALLTALK_VERSION}.changes"
 
@@ -50,27 +46,24 @@ fi
 
 mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 
-print_info "Downloading Vivide image"
-wget "${VIVIDE_SOURCE_URL}${VIVIDE_IMAGE}"
-wget "${VIVIDE_SOURCE_URL}${VIVIDE_CHANGES}"
-mv "${VIVIDE_IMAGE}" "${GRAMADA_IMAGE}"
-mv "${VIVIDE_CHANGES}" "${GRAMADA_CHANGES}"
-
-if [[ $TRAVIS_SMALLTALK_VERSION == "Squeak4.6" ]]; then
-    print_info "Downloading Squeak4.6 sources..."
-    wget http://ftp.squeak.org/sources_files/SqueakV46.sources.gz
-    gunzip SqueakV46.sources.gz
-elif [[ $TRAVIS_SMALLTALK_VERSION == "Squeak5.1" ]]; then
-    print_info "Downloading Squeak5.1 sources..."
-    wget http://ftp.squeak.org/sources_files/SqueakV50.sources.gz
+if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.1" ]]; then
+    print_info "Downloading Squeak-5.1 image..."
+    wget http://files.squeak.org/5.1/Squeak5.1-16548-32bit/Squeak5.1-16548-32bit.zip
+    unzip Squeak5.1-16548-32bit.zip
+    wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
 else
-    print_info "Downloading SqueakTrunk sources..."
-    wget http://ftp.squeak.org/sources_files/SqueakV50.sources.gz
+    print_info "Downloading Squeak-trunk image..."
+    wget http://files.squeak.org/trunk/Squeak6.0alpha-16892-32bit/Squeak6.0alpha-16892-32bit.zip
+    unzip Squeak6.0alpha-16892-32bit.zip
+    wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
 fi
 
-print_info "Preparing Gramada image from ${TRAVIS_SMALLTALK_VERSION} Vivide image..."
+mv *.image "${GRAMADA_IMAGE}"
+mv *.changes "${GRAMADA_CHANGES}"
+
+print_info "Preparing Gramada image from ${TRAVIS_SMALLTALK_VERSION} Squeak image..."
 EXIT_STATUS=0
 "${SMALLTALK_CI_VM}" $COG_VM_PARAM "${GRAMADA_IMAGE}" "${TRAVIS_BUILD_DIR}/scripts/prepare_image.st" || EXIT_STATUS=$?
 

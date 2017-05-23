@@ -1,3 +1,8 @@
+"If e.g. your tests change code in the image dynamically, the image will require you to set 
+author initials which might fail these tests. So we set some dummy initials here to avoid this."
+
+[MCMcmUpdater updateFromServer] valueSupplyingAnswer: true.
+
 "Get the Metacello configuration (for Squeak users)"
 Installer gemsource
     project: 'metacello';
@@ -25,11 +30,9 @@ Installer gemsource
   repository: 'github://dalehenrich/metacello-work:master/repository';
   load.
 
-"If e.g. your tests change code in the image dynamically, the image will require you to set 
-author initials which might fail these tests. So we set some dummy initials here to avoid this."
 (Smalltalk at: #MetacelloPlatform) current authorName: 'Gramada'.
 
-"Load Vivide into image"
+"Load Gramada into image"
 Metacello new
   baseline: 'Gramada';
   repository: 'github://hpi-swa/Gramada/repository';
