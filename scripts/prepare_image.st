@@ -35,7 +35,7 @@ Installer gemsource
 "Load Gramada into image"
 Metacello new
   baseline: 'Gramada';
-  repository: 'github://hpi-swa/Gramada/repository';
+  repository: 'github://hpi-swa-lab/Gramada/repository';
   load.
 
 "Start Vivide delayed"
