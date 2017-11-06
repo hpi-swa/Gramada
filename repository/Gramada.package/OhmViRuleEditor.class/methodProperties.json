@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"supportedTypes" : "pre 6/1/2015 13:32" },
+		"supportedTypes" : "pre 11/6/2017 15:40" },
 	"instance" : {
 		"actionNameOfRule" : "pre 6/1/2015 15:28",
-		"addArtifact" : "pre 6/8/2015 10:33",
+		"addArtifact" : "pre 11/6/2017 15:46",
 		"artifactName" : "pre 5/4/2015 11:59",
 		"askUserForAttributes" : "pre 6/10/2015 09:43",
 		"browseActions" : "pre 6/1/2015 15:53",
