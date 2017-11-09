@@ -2,6 +2,6 @@ language: smalltalk
 sudo: false
 
 smalltalk:
-  - Squeak-trunk
+  - Squeak-5.1
 
 after_success: travis_wait 50 bash $TRAVIS_BUILD_DIR/scripts/prepare_image.sh
