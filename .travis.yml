@@ -3,7 +3,5 @@ sudo: false
 
 smalltalk:
   - Squeak-trunk
-  - Squeak-5.1
-  - Squeak-5.0
 
 after_success: travis_wait 30 bash $TRAVIS_BUILD_DIR/scripts/prepare_image.sh
