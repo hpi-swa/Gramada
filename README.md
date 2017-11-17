@@ -42,7 +42,8 @@ do: [:b | b load].
 
 ## Further Documentation
 
-Patrick Rein and Robert Hirschfeld and Marcel Taeumel.
+* A short screencast of a common workflow: https://vimeo.com/180190846
+* Patrick Rein and Robert Hirschfeld and Marcel Taeumel.
 *Gramada: Immediacy in Programming Language Development.*
 In Proceedings of the ACM Symposium for New Ideas, New Paradigms, and Reflections on Everything to do with Programming and Software (Onward!) 2016, co-located with the Conference on Object-oriented Programming, Systems, Languages, and Applications (OOPSLA) 2016. pages 165–179, ACM, 2016. [online version](http://dl.acm.org/authorize?N26270)
 
