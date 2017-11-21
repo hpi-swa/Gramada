@@ -13,6 +13,4 @@ stepd003dd9abd31c14fbc56ea9cd47b3bb1
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '20 May 2015 10:56:21 pm').
-(#isNew -> false).
-(#priority -> 10)}))})
+(#creationTimeStamp -> '20 May 2015 10:56:21 pm')}))})

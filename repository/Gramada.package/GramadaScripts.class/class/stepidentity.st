@@ -13,6 +13,4 @@ stepidentity
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '20 October 2014 6:54:14 am').
-(#isNew -> false).
-(#priority -> 60)}))})
+(#creationTimeStamp -> '20 October 2014 6:54:14 am')}))})

@@ -1,0 +1,4 @@
+*gramada
+hasVivideTools 
+
+	^ true

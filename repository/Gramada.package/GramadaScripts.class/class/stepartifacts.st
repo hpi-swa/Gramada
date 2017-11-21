@@ -14,5 +14,4 @@ stepartifacts
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 October 2014 7:29:40 am').
-(#priority -> 5).
 (#view -> ViArtifactListView2)}))})
