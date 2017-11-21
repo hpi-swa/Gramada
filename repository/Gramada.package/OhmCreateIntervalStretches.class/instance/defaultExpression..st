@@ -1,6 +1,7 @@
 actions
 defaultExpression: aNode
 	"Order matters as this way we construct it from top to bottom"
+	aNode interval start = 0 ifTrue: [^ self].
 	(aNode interval start - self startOffset
 		to: ((aNode interval end) 
 				min: aNode interval start + (aNode interval contents size)) - self startOffset)
