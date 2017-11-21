@@ -10,7 +10,7 @@ baseline: spec
 				package: 'ContextS2-Core' with:
  					[ spec repository: 'http://www.hpi.uni-potsdam.de/hirschfeld/squeaksource/ContextSTrunk' ];
 				baseline: 'Vivide' with: 
-					[ spec repository: 'github://hpi-swa/vivide/repository' ];
+					[ spec repository: 'github://codezeilen/vivide/repository' ];
 				package: 'Gramada' with: [spec requires: #('libraries')];
 				yourself.
 			spec
