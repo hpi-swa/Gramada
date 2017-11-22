@@ -9,7 +9,11 @@ reset
 		layoutInset: 2.
 	
 	"Reset model"
-	(self model isNil or: [self model objects isEmpty]) ifTrue: [^ self].
+	(self model isNil 
+		or: [self model objects isEmpty]
+		"Next case is for preventing null parse nodes to be displayed"
+		or: [self model objects first ruleName isEmpty]) ifTrue: [^ self].
+	self flag: #ugly. "regarding the null parse node fix --pre"
 
 	self node: self model objects first.
 	(self model nodes first includesKey: #filter)
