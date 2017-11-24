@@ -14,7 +14,7 @@ You can get a prepared image [here](https://www.hpi.uni-potsdam.de/hirschfeld/ar
 ````Smalltalk
 Metacello new
   baseline: 'Gramada';
-  repository: 'github://hpi-swa-lab/gramada/repository';
+  repository: 'github://hpi-swa/gramada/repository';
   load.
 			
 (Smalltalk at: #GramadaScripts) installAndOpenGramada.
@@ -34,7 +34,7 @@ To update Gramada first pull the latest version of the git repository. Then exec
   repository: 'github://hpi-swa/ohm-s/packages') .
 (Smalltalk at: #Metacello) new
   baseline: 'Gramada';
-  repository: 'github://hpi-swa-lab/gramada/repository'
+  repository: 'github://hpi-swa/gramada/repository'
 }
 do: [:b | b get];
 do: [:b | b load].
