@@ -3,6 +3,8 @@ author initials which might fail these tests. So we set some dummy initials here
 
 [MCMcmUpdater updateFromServer] valueSupplyingAnswer: true.
 
+TranscriptStream redirectToStdOut: true.
+
 "Get the Metacello configuration (for Squeak users)"
 Installer gemsource
     project: 'metacello';
