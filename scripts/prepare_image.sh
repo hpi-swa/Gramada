@@ -9,6 +9,8 @@ function print_info {
     printf "\e[0;34m$1\e[0m\n"
 }
 
+print_info "Starting image preparation"
+
 # Check required arguments
 # ==============================================================================
 if [[ "${TRAVIS_BRANCH}" != "master" ]] || [[ "${TRAVIS_PULL_REQUEST}" != "false" ]]; then
@@ -27,6 +29,8 @@ elif [[ -z "${TRAVIS_SMALLTALK_VERSION}" ]]; then
     print_info "\$TRAVIS_SMALLTALK_VERSION is not defined!"
     exit 1
 fi
+
+print_info "Environment correctly configured"
 
 # ==============================================================================
 
@@ -54,8 +58,8 @@ if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.1" ]]; then
     gunzip SqueakV50.sources.gz
 else
     print_info "Downloading Squeak-trunk image..."
-    wget http://files.squeak.org/trunk/Squeak6.0alpha-17456-32bit/Squeak6.0alpha-17456-32bit.zip
-    unzip Squeak6.0alpha-17456-32bit.zip
+    wget http://files.squeak.org/trunk/Squeak6.0alpha-17474-32bit/Squeak6.0alpha-17474-32bit.zip
+    unzip Squeak6.0alpha-17474-32bit.zip
     wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
 fi
