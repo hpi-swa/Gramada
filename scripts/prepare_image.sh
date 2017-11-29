@@ -9,6 +9,8 @@ function print_info {
     printf "\e[0;34m$1\e[0m\n"
 }
 
+print_info "Starting image preparation"
+
 # Check required arguments
 # ==============================================================================
 if [[ "${TRAVIS_BRANCH}" != "master" ]] || [[ "${TRAVIS_PULL_REQUEST}" != "false" ]]; then
@@ -27,6 +29,8 @@ elif [[ -z "${TRAVIS_SMALLTALK_VERSION}" ]]; then
     print_info "\$TRAVIS_SMALLTALK_VERSION is not defined!"
     exit 1
 fi
+
+print_info "Environment correctly configured"
 
 # ==============================================================================
 
