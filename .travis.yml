@@ -5,4 +5,8 @@ smalltalk:
   - Squeak-5.1
   - Squeak-trunk
 
+matrix:
+    allow_failures:
+        - smalltalk: Squeak-trunk
+
 after_success: travis_wait 50 bash $TRAVIS_BUILD_DIR/scripts/prepare_image.sh
