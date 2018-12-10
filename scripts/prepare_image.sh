@@ -50,10 +50,10 @@ fi
 
 mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 
-if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.1" ]]; then
-    print_info "Downloading Squeak-5.1 image..."
-    wget https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/Vivide-Squeak-5.1.image 
-    wget https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/Vivide-Squeak-5.1.changes
+if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.2" ]]; then
+    print_info "Downloading Squeak-5.2 image..."
+    wget https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/Vivide-Squeak-5.2.image 
+    wget https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/Vivide-Squeak-5.2.changes
     wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
 else
