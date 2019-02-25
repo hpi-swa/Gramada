@@ -8,8 +8,8 @@ You can get a prepared image [here](https://www.hpi.uni-potsdam.de/hirschfeld/ar
 
 ### Build your Own
 1. Get [Squeak 5.0 or later](http://www.squeak.org)
-2. Load [Metacello](https://github.com/dalehenrich/metacello-work). To speed up the process you can also get a prebuild Vivide image from the Vivide repository.
-3. Execute the following script to install Gramada
+2. Load [Metacello](https://github.com/Metacello/metacello). To speed up the process you can also get a prebuild Vivide image from the Vivide repository.
+3. Execute the following script to install Gramada:
 
 ````Smalltalk
 Metacello new
