@@ -3,6 +3,7 @@ sudo: false
 
 smalltalk:
   - Squeak-5.2
+  - Squeak-5.3
   - Squeak-trunk
 
 matrix:
