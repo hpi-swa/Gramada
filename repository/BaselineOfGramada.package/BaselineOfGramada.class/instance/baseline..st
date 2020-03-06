@@ -7,10 +7,10 @@ baseline: spec
 			spec
 				baseline: 'Ohm' with: [
 					spec repository: 'github://hpi-swa/ohm-s/packages'];
-				package: 'ContextS2-Core' with:
- 					[ spec repository: 'http://www.hpi.uni-potsdam.de/hirschfeld/squeaksource/ContextSTrunk' ];
 				baseline: 'Vivide' with: 
 					[ spec repository: 'github://hpi-swa/vivide/repository' ];
+				package: 'ContextS2-Core' with:
+ 					[ spec repository: 'http://www.hpi.uni-potsdam.de/hirschfeld/squeaksource/ContextSTrunk' ];
 				package: 'Gramada' with: [spec requires: #('libraries')];
 				yourself.
 			spec
